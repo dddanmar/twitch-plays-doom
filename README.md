@@ -2,6 +2,8 @@
 
 twitch-plays-doom is a Python Twitch IRC bot for making RESTful calls to a copy of  [restful-doom](https://github.com/jeff-1amstudios/restful-doom).
 
+Currently live -- https://www.twitch.tv/dddanmar
+
 ![twitch plays doom](./twitch-plays-doom.png?raw=true)
 
 
