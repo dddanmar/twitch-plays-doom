@@ -42,7 +42,7 @@ class TwitchBot(irc.bot.SingleServerIRCBot):
         c.join(self.channel)
 
     def on_pubmsg(self, c, e):
-        commands = ["f","b","l","r","s","d","p"]
+        commands = ["f","b","l","r","s","d","p","a"]
         command = e.arguments[0]
         if len(command)==1:
             if command in commands:
