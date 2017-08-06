@@ -42,7 +42,7 @@ class TwitchBot(irc.bot.SingleServerIRCBot):
         c.join(self.channel)
 
     def on_pubmsg(self, c, e):
-        commands = ["f","b","l","r","s","d"]
+        commands = ["f","b","l","r","s","d","p"]
         command = e.arguments[0]
         if len(command)==1:
             if command in commands:
@@ -52,7 +52,11 @@ class TwitchBot(irc.bot.SingleServerIRCBot):
                 if command == "l": self.rda.left()
                 if command == "r": self.rda.right()
                 if command == "s": self.rda.shoot()
-                if command == "d": self.rda.toggledoor()
+                if command == "d": self.rda.activate()
+                if command == "p":
+                    self.rda.shoot()
+                    self.rda.shoot()
+                if command == "a": self.rda.activate()
         return
 
     def do_command(self, e, cmd):
