@@ -14,6 +14,17 @@ class rDoomAPI(object):
 
         self.object_distance = 200
 
+    def godmode(self):
+        try:
+            current_mode = requests.get("%s:%s%s" % (self.host, self.port, self.player_url)).json()['cheatFlags']['CF_GODMODE']
+        except:
+            current_mode = False
+        if current_mode:
+            result = requests.patch("%s:%s%s" % (self.host, self.port, self.player_url), data = json.dumps({"cheatFlags":{"CF_GODMODE":False}})).json()
+        else:
+            result = requests.patch("%s:%s%s" % (self.host, self.port, self.player_url), data = json.dumps({"cheatFlags":{"CF_GODMODE":True}})).json()
+        print(result)
+
     def shoot(self):
         result = requests.post("%s:%s%s" % (self.host, self.port, self.actions_url), data = json.dumps({"type":"shoot"})).status_code
         if result == 201:

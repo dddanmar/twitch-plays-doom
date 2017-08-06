@@ -44,6 +44,9 @@ class TwitchBot(irc.bot.SingleServerIRCBot):
     def on_pubmsg(self, c, e):
         commands = ["f","b","l","r","s","d","p","a","1","2","3","4","5","6"]
         command = e.arguments[0]
+        if command == "iddqd":
+            self.rda.godmode()
+            return 
         if len(command)==1:
             if command in commands:
                 print("Got command %s" % command)
