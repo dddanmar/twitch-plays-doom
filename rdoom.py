@@ -26,6 +26,9 @@ class rDoomAPI(object):
     def restartmap(self):
         result = requests.patch("%s:%s%s" % (self.host, self.port, self.world_url), data = json.dumps({"map":1, "episode":1})).json()
         return result
+    def swapweapon(self, weapon):
+        result = requests.patch("%s:%s%s" % (self.host, self.port, self.player_url), data = json.dumps({"weapon":int(weapon)})).json()
+        return result
 
     def forward(self):
         result = requests.post("%s:%s%s" % (self.host, self.port, self.actions_url), data = json.dumps({"type":"forward"})).status_code
