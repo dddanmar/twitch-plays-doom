@@ -19,7 +19,11 @@ twitch-plays-doom is a Python Twitch IRC bot for making RESTful calls to a copy 
  - "1" "2" "3" "4" "5" "6" - change weapon
 
 ## Thanks!
-[restful-doom](https://github.com/jeff-1amstudios/restful-doom) Jeff & Richard
+[restful-doom](https://github.com/jeff-1amstudios/restful-doom) Jeff & Richard  
+
 [chocolate-doom](https://github.com/chocolate-doom/chocolate-doom) team  
+
 [cJSON](https://github.com/DaveGamble/cJSON) - JSON parsing / generation  
+
 [yuarel](https://github.com/jacketizer/libyuarel/) - URL parsing  
+
