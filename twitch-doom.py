@@ -42,24 +42,28 @@ class TwitchBot(irc.bot.SingleServerIRCBot):
         c.join(self.channel)
 
     def on_pubmsg(self, c, e):
-        commands = ["f","b","l","r","s","d","p","a","1","2","3","4","5","6"]
+
+        # Forward: w
+        # Backward: s
+        # Left: a
+        # Right: d
+        # Shoot: f
+        # Activate: e
+
+        commands = ["w","s","a","d","f","e","1","2","3","4","5","6"]
         command = e.arguments[0]
         if command == "iddqd":
             self.rda.godmode()
-            return 
+            return
         if len(command)==1:
             if command in commands:
                 print("Got command %s" % command)
-                if command == "f": self.rda.forward()
-                if command == "b": self.rda.backward()
-                if command == "l": self.rda.left()
-                if command == "r": self.rda.right()
-                if command == "s": self.rda.shoot()
-                if command == "d": self.rda.activate()
-                if command == "p":
-                    self.rda.shoot()
-                    self.rda.shoot()
-                if command == "a": self.rda.activate()
+                if command == "w": self.rda.forward()
+                if command == "s": self.rda.backward()
+                if command == "a": self.rda.left()
+                if command == "d": self.rda.right()
+                if command == "f": self.rda.shoot()
+                if command == "e": self.rda.activate()
                 if command == "1": self.rda.swapweapon(command)
                 if command == "2": self.rda.swapweapon(command)
                 if command == "3": self.rda.swapweapon(command)
