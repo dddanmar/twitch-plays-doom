@@ -14,8 +14,8 @@ import os
 class TwitchBot(irc.bot.SingleServerIRCBot):
     def __init__(self):
         self.client_id = os.environ['TWITCH_CLIENT_ID']
-        self.token = os.environ['TWTICH_TOKEN']
-        self.channel = os.environ['TWTICH_CHANNEL']
+        self.token = os.environ['TWITCH_TOKEN']
+        self.channel = os.environ['TWITCH_CHANNEL']
         self.user= os.environ['TWITCH_USER']
         rd_port = 6666
         rd_host = "http://localhost"
