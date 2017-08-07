@@ -50,11 +50,11 @@ class TwitchBot(irc.bot.SingleServerIRCBot):
         # Shoot: f
         # Activate: e
 
-        commands = ["w","s","a","d","f","e","1","2","3","4","5","6"]
+        commands = ["w","s","a","d","f","e","0","1","2","3","4","5","6","7"]
         command = e.arguments[0]
-        if command == "iddqd":
-            self.rda.godmode()
-            return
+        #if command == "iddqd":
+        #    self.rda.godmode()
+        #    return
         if len(command)==1:
             if command in commands:
                 print("Got command %s" % command)
@@ -64,14 +64,14 @@ class TwitchBot(irc.bot.SingleServerIRCBot):
                 if command == "d": self.rda.right()
                 if command == "f": self.rda.shoot()
                 if command == "e": self.rda.activate()
+                if command == "0": self.rda.swapweapon(command)
                 if command == "1": self.rda.swapweapon(command)
                 if command == "2": self.rda.swapweapon(command)
                 if command == "3": self.rda.swapweapon(command)
                 if command == "4": self.rda.swapweapon(command)
                 if command == "5": self.rda.swapweapon(command)
                 if command == "6": self.rda.swapweapon(command)
-
-
+                if command == "7": self.rda.swapweapon(command)
 
         return
 
