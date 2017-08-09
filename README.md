@@ -4,6 +4,8 @@ twitch-plays-doom is a Python Twitch IRC bot for making RESTful calls to a copy 
 
 Stream is now down for the moment. Twitch played for 4 days and made it to E01M04. There were struggles, factions, walls, god mode toggles and a giant 6 second lag that got in everyone's way but it was fantastic all the way through. 
 
+Final viewer count was ~3700 and a parse of the channel's chat logs for timespan show ~1800 people participated.
+
 ![twitch plays doom](./twitch-plays-doom.png?raw=true)
 
 
