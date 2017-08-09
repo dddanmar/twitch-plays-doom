@@ -2,7 +2,7 @@
 
 twitch-plays-doom is a Python Twitch IRC bot for making RESTful calls to a copy of  [restful-doom](https://github.com/jeff-1amstudios/restful-doom).
 
-Currently live -- https://www.twitch.tv/dddanmar
+Stream is now down for the moment. Twitch played for 4 days and made it to E01M04. There were struggles, factions, walls, god mode toggles and a giant 6 second lag that got in everyone's way but it was fantastic all the way through. 
 
 ![twitch plays doom](./twitch-plays-doom.png?raw=true)
 
@@ -31,4 +31,8 @@ Currently live -- https://www.twitch.tv/dddanmar
 [cJSON](https://github.com/DaveGamble/cJSON) - JSON parsing / generation  
 
 [yuarel](https://github.com/jacketizer/libyuarel/) - URL parsing  
+
+## Bonus
+
+![twitch plays doom](./hand.png?raw=true)
 
