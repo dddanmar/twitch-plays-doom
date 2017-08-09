@@ -34,5 +34,5 @@ Stream is now down for the moment. Twitch played for 4 days and made it to E01M0
 
 ## Bonus
 
-![twitch plays doom](./hand.png?raw=true)
+![twitch plays doom](./Hand.png?raw=true)
 
